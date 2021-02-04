@@ -1,0 +1,46 @@
+.container {
+    background-image:url('../../assets//images/poker_background.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    object-fit: cover;
+    border: 3px solid black;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+.innerContainer {
+    /* border: 3px solid blue; */
+    width: 50%;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: column;
+}
+
+.buttons button:not(first-child):not(last-child) {
+    margin: 10px 0;
+}
+
+.buttons button {
+    font-size: 16px;
+}
+
+.buttons button {
+    color: white;
+    border-color: white;
+    width: 200px;
+    height: 50px;
+}
+
+h1 {
+    font-size: 50px;
+    color: white;
+    text-align: center;
+}
