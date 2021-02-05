@@ -1,0 +1,24 @@
+<div class="container introBackground">
+    <div class="innerContainer">
+        <form (ngSubmit)="onSubmit()" [formGroup]="signupForm">
+            <p>Create an Account!</p>
+            <label>
+                Email:
+                <input type="email" formControlName="email">
+            </label>
+            <label>
+                Password:
+                <input type="text" formControlName="password">
+            </label>
+            <label>
+                Reenter Password:
+                <input type="text" formControlName="reenterPassword">
+            </label>
+            <label>
+                Display Name:
+                <input type="text" formControlName="displayName">
+            </label>
+            <button mat-stroked-button color="primary">Register </button>
+        </form>
+    </div>
+</div>
