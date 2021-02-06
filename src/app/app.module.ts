@@ -10,6 +10,9 @@ import { MatButtonModule } from '@angular/material/button';
 import { SignupComponent } from './auth/signup/signup.component';
 import { LoginComponent } from './auth/login/login.component';
 import { ReactiveFormsModule } from '@angular/forms';
+import { HomePageComponent } from './home-page/home-page.component';
+import { ProfileComponent } from './home-page/profile/profile.component';
+import { ConsoleComponent } from './home-page/console/console.component';
 
 
 @NgModule({
@@ -17,7 +20,10 @@ import { ReactiveFormsModule } from '@angular/forms';
     AppComponent,
     LandingPageComponent,
     SignupComponent,
-    LoginComponent
+    LoginComponent,
+    HomePageComponent,
+    ProfileComponent,
+    ConsoleComponent
   ],
   imports: [
     BrowserModule,
