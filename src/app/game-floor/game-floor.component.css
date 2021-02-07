@@ -1,0 +1,15 @@
+.container {
+    justify-content: center;
+    background: radial-gradient(rgb(111 203 93) ,rgb(27 92 11));
+}
+
+.seatingCircle {
+    background: radial-gradient(#cb1c1e 45%, #59121c);
+    /* background-color: rgb(151, 41, 41); */
+    position: relative;
+    width: 80%;
+    height: 65%;
+    border: 1px solid black;
+    border-radius: 50%;
+}
+

@@ -13,6 +13,8 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { HomePageComponent } from './home-page/home-page.component';
 import { ProfileComponent } from './home-page/profile/profile.component';
 import { ConsoleComponent } from './home-page/console/console.component';
+import { GameFloorComponent } from './game-floor/game-floor.component';
+import { PlayerCardsComponent } from './game-floor/player-cards/player-cards.component';
 
 
 @NgModule({
@@ -23,7 +25,9 @@ import { ConsoleComponent } from './home-page/console/console.component';
     LoginComponent,
     HomePageComponent,
     ProfileComponent,
-    ConsoleComponent
+    ConsoleComponent,
+    GameFloorComponent,
+    PlayerCardsComponent
   ],
   imports: [
     BrowserModule,
