@@ -1,7 +1,7 @@
 <div class="player1">
     <div class="playingCards">
-        <img src="../../../assets/images/cards/2C.png" alt="">
-        <img src="../../../assets/images/cards/cardback.png" alt="">
+        <img [style.display]="displayCards()" src="../../../assets/images/cards/{{ playerHand['p1c1'] }}.png" alt="">
+        <img [style.display]="displayCards()" src="../../../assets/images/cards/{{ playerHand['p1c2'] }}.png" alt="">
     </div>
     <div class="playerText">
         <p>KelvinPoker</p>
@@ -10,8 +10,8 @@
 </div>
 <div class="player2">
     <div class="playingCards">
-        <img src="../../../assets/images/cards/cardback.png" alt="">
-        <img src="../../../assets/images/cards/cardback.png" alt="">
+        <img [style.display]="displayCards()" src="../../../assets/images/cards/{{ playerHand['p2c1'] }}.png" alt="">
+        <img [style.display]="displayCards()" src="../../../assets/images/cards/{{ playerHand['p2c2'] }}.png" alt="">
     </div>
     <div class="playerText">
         <p>Bot 1</p>
@@ -20,8 +20,8 @@
 </div>
 <div class="player3">
     <div class="playingCards">
-        <img src="../../../assets/images/cards/cardback.png" alt="">
-        <img src="../../../assets/images/cards/cardback.png" alt="">
+        <img [style.display]="displayCards()" src="../../../assets/images/cards/{{ playerHand['p3c1'] }}.png" alt="">
+        <img [style.display]="displayCards()" src="../../../assets/images/cards/{{ playerHand['p3c2'] }}.png" alt="">
     </div>
     <div class="playerText">
         <p>Bot 2</p>
@@ -30,8 +30,8 @@
 </div>
 <div class="player4">
     <div class="playingCards">
-        <img src="../../../assets/images/cards/cardback.png" alt="">
-        <img src="../../../assets/images/cards/cardback.png" alt="">
+        <img [style.display]="displayCards()" src="../../../assets/images/cards/{{ playerHand['p4c1'] }}.png" alt="">
+        <img [style.display]="displayCards()" src="../../../assets/images/cards/{{ playerHand['p4c2'] }}.png" alt="">
     </div>
     <div class="playerText">
         <p>Bot 3</p>
@@ -40,8 +40,8 @@
 </div>
 <div class="player5">
     <div class="playingCards">
-        <img src="../../../assets/images/cards/cardback.png" alt="">
-        <img src="../../../assets/images/cards/cardback.png" alt="">
+        <img [style.display]="displayCards()" src="../../../assets/images/cards/{{ playerHand['p5c1'] }}.png" alt="">
+        <img [style.display]="displayCards()" src="../../../assets/images/cards/{{ playerHand['p5c2'] }}.png" alt="">
     </div>
     <div class="playerText">
         <p>Bot 4</p>
@@ -50,8 +50,8 @@
 </div>
 <div class="player6">
     <div class="playingCards">
-        <img src="../../../assets/images/cards/cardback.png" alt="">
-        <img src="../../../assets/images/cards/cardback.png" alt="">
+        <img [style.display]="displayCards()" src="../../../assets/images/cards/{{ playerHand['p6c1'] }}.png" alt="">
+        <img [style.display]="displayCards()" src="../../../assets/images/cards/{{ playerHand['p6c2'] }}.png" alt="">
     </div>
     <div class="playerText">
         <p>Bot 5</p>

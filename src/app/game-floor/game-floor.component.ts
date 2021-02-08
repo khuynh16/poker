@@ -6,10 +6,16 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./game-floor.component.css']
 })
 export class GameFloorComponent implements OnInit {
+  cardsInHandDisplayed = false;
 
   constructor() { }
 
   ngOnInit(): void {
+  }
+
+  gameStart() {
+    console.log('Game started.');
+    this.cardsInHandDisplayed = true;
   }
 
 }

@@ -5,11 +5,18 @@
 
 .seatingCircle {
     background: radial-gradient(#cb1c1e 45%, #59121c);
-    /* background-color: rgb(151, 41, 41); */
     position: relative;
-    width: 80%;
-    height: 65%;
+    width: 85%;
+    height: 75%;
     border: 1px solid black;
     border-radius: 50%;
+    display: flex;
+    justify-content: center;   
+    align-items: center;
+}
+
+.seatingCircle button {
+    color: black;
+    background-color: white;
 }
 

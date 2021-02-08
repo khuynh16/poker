@@ -1,5 +1,6 @@
 <div class="container">
     <div class="seatingCircle">
-        <app-player-cards></app-player-cards>
+        <button mat-stroked-button color="primary" (click)="gameStart()">Start Game</button>
+        <app-player-cards [gameStart]="cardsInHandDisplayed"></app-player-cards>
     </div>
 </div>
