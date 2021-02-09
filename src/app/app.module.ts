@@ -17,6 +17,7 @@ import { ProfileComponent } from './home-page/profile/profile.component';
 import { ConsoleComponent } from './home-page/console/console.component';
 import { GameFloorComponent } from './game-floor/game-floor.component';
 import { PlayerCardsComponent } from './game-floor/player-cards/player-cards.component';
+import { AuthFormComponent } from './auth/auth-form/auth-form.component';
 
 
 @NgModule({
@@ -29,7 +30,8 @@ import { PlayerCardsComponent } from './game-floor/player-cards/player-cards.com
     ProfileComponent,
     ConsoleComponent,
     GameFloorComponent,
-    PlayerCardsComponent
+    PlayerCardsComponent,
+    AuthFormComponent
   ],
   imports: [
     BrowserModule,
