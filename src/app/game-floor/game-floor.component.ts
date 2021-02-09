@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewChild, AfterViewInit } from '@angular/core';
 
 @Component({
   selector: 'app-game-floor',
@@ -16,6 +16,6 @@ export class GameFloorComponent implements OnInit {
   gameStart() {
     console.log('Game started.');
     this.cardsInHandDisplayed = true;
+    // somehow call displayCards function in player-cards component
   }
-
 }

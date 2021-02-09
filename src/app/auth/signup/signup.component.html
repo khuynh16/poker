@@ -1,24 +1,35 @@
 <div class="container introBackground">
     <div class="innerContainer">
-        <form (ngSubmit)="onSubmit()" [formGroup]="signupForm">
-            <p>Create an Account!</p>
-            <label>
-                Email:
-                <input type="email" formControlName="email">
-            </label>
-            <label>
-                Password:
-                <input type="text" formControlName="password">
-            </label>
-            <label>
-                Reenter Password:
-                <input type="text" formControlName="reenterPassword">
-            </label>
-            <label>
-                Display Name:
-                <input type="text" formControlName="displayName">
-            </label>
-            <button mat-stroked-button color="primary" routerLink="/home-page">Register</button>
-        </form>
+        <form class="example-form">
+            <div class="formHeading">
+                <mat-icon matPrefix>stars</mat-icon>
+                <h3>Create an Account.</h3>
+                <mat-icon matPrefix>stars</mat-icon>
+            </div>
+            <mat-form-field class="example-full-width" appearance="outline">
+                <mat-icon matPrefix>email</mat-icon>
+                <mat-label class="test">Email</mat-label>
+                <input class="test" matInput>
+            </mat-form-field>
+            <mat-form-field class="example-full-width" appearance="outline">
+                <mat-icon matPrefix>lock</mat-icon>
+                <mat-label class="test">Password</mat-label>
+                <input class="test" type="password" matInput>
+            </mat-form-field>
+            <mat-form-field class="example-full-width" appearance="outline">
+                <mat-icon matPrefix>lock</mat-icon>
+                <mat-label class="test">Reenter Password</mat-label>
+                <input class="test" type="password" matInput>
+            </mat-form-field>
+            <mat-form-field class="example-full-width" appearance="outline">
+                <mat-icon matPrefix>account_circle</mat-icon>
+                <mat-label class="test">Username</mat-label>
+                <input class="test" matInput>
+            </mat-form-field>
+            <div class="nav-footer">
+                <p>Have an account? <a href="" class="signInText">Sign in.</a></p>
+                <button mat-stroked-button color="primary" routerLink="/home-page">Register</button>
+            </div>
+          </form>          
     </div>
 </div>

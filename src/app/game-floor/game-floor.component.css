@@ -18,5 +18,8 @@
 .seatingCircle button {
     color: black;
     background-color: white;
+    width: 15vw;
+    height: 10vh;
+    font-size: 20px;
 }
 

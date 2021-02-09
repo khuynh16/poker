@@ -40,6 +40,10 @@ export class PlayerCardsComponent implements OnInit {
     // use a copied deck of the original and not the original deck itself
     this.tempDeckOfCards = this.deckOfCards;
 
+    // poker cards are dealt already at game floor screen, just not displayed until
+    // start game button is clicked
+    this.dealCards(6);
+
     /*
     CURRENT ISSUE
     -below function needed to be in displayCards function
@@ -47,7 +51,7 @@ export class PlayerCardsComponent implements OnInit {
       on page load, only when start game button is clicked, the interpolation does not 
       handle correctly -> thus 404 status error for an image code cannot find
     */
-    this.dealCards(6);
+    // this.dealCards(6);
   }
 
   /*
