@@ -4,6 +4,17 @@
     justify-content: space-evenly;
     align-items: center;
     height: 30%;
+    position: relative;
+}
+
+.exitIcon {
+    position: absolute;
+    left: 5%;
+    top: 10%;
+}
+
+a, a:visited, a:hover, a:active {
+    color: inherit;
 }
 
 .playerIdentity img {
