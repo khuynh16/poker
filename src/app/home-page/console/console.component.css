@@ -24,6 +24,7 @@ div button {
     display: flex;
     font-weight: bold;
     font-style: italic;
+    
 }
 
 .left,
@@ -75,4 +76,9 @@ div button {
 
 div button:hover {
     cursor: pointer;
+}
+
+button:hover {
+    /* opacity: 0.5; */
+    box-shadow: 6px 6px 20px rgb(22 22 22 / 35%);
 }
