@@ -1,0 +1,44 @@
+.buttons {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.buttons div {
+    width: 100%;
+    height: 25%;
+    display: flex; 
+    align-items: center;
+    justify-content: center;
+}
+
+div button {
+    width: 90%;
+    height: 70%;
+    border-radius: 10px;
+    font-size: 20px;
+    background-color: #cae0c5;
+    display: flex;
+}
+
+.left,
+.right {
+    height: 100% !important;
+    border-radius: 10px;
+}
+
+.left,
+.right {
+    overflow: hidden;
+}
+
+.cards {
+    width: 20%;
+}
+
+div button:hover {
+    cursor: pointer;
+}
