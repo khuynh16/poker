@@ -6,6 +6,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatButtonModule } from '@angular/material/button';
 import { MatInputModule } from '@angular/material/input';
 import { MatIconModule } from '@angular/material/icon';
+import { MatTooltipModule } from '@angular/material/tooltip';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -18,6 +19,7 @@ import { ConsoleComponent } from './home-page/console/console.component';
 import { GameFloorComponent } from './game-floor/game-floor.component';
 import { PlayerCardsComponent } from './game-floor/player-cards/player-cards.component';
 import { AuthFormComponent } from './auth/auth-form/auth-form.component';
+import { GameSettingsComponent } from './game-settings/game-settings.component';
 
 
 @NgModule({
@@ -31,7 +33,8 @@ import { AuthFormComponent } from './auth/auth-form/auth-form.component';
     ConsoleComponent,
     GameFloorComponent,
     PlayerCardsComponent,
-    AuthFormComponent
+    AuthFormComponent,
+    GameSettingsComponent
   ],
   imports: [
     BrowserModule,
@@ -42,7 +45,8 @@ import { AuthFormComponent } from './auth/auth-form/auth-form.component';
     ReactiveFormsModule,
     FormsModule,
     MatInputModule,
-    MatIconModule
+    MatIconModule,
+    MatTooltipModule
   ],
   providers: [],
   bootstrap: [AppComponent]
