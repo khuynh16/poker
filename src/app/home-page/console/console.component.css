@@ -22,21 +22,55 @@ div button {
     font-size: 20px;
     background-color: #cae0c5;
     display: flex;
+    font-weight: bold;
+    font-style: italic;
 }
 
 .left,
 .right {
     height: 100% !important;
     border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
 }
 
-.left,
-.right {
+.left img,
+.right img {
+    position: absolute;
     overflow: hidden;
+    width: 40%;
+    margin-top: 50%;
 }
 
 .cards {
     width: 20%;
+    transform-origin: 0% 100%;
+}
+
+.c1 {
+    z-index: 2;
+    transform: rotate(-30deg);
+}
+
+.c2 {
+    z-index: 3;
+    transform: rotate(-15deg);
+}
+
+.c3 {
+    z-index: 4;
+    transform: rotate(0deg);
+}
+
+.c4 {
+    z-index: 5;
+    transform: rotate(15deg);
+}
+
+.c5 {
+    z-index: 6;
+    transform: rotate(30deg);
 }
 
 div button:hover {
