@@ -6,7 +6,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatButtonModule } from '@angular/material/button';
 import { MatInputModule } from '@angular/material/input';
 import { MatIconModule } from '@angular/material/icon';
-import { MatTooltipModule } from '@angular/material/tooltip';
+import { MatSelectModule } from '@angular/material/select';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -46,7 +46,7 @@ import { GameSettingsComponent } from './game-settings/game-settings.component';
     FormsModule,
     MatInputModule,
     MatIconModule,
-    MatTooltipModule
+    MatSelectModule
   ],
   providers: [],
   bootstrap: [AppComponent]

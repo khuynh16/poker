@@ -1,3 +1,62 @@
-Game settings
-<button routerLink="/home-page">Back</button>
+<div class="container">
+    <div class="dashboard">
+        <app-profile></app-profile>
+        <section class="gameSettings">
+            <form [formGroup]="form" (ngSubmit)="onSubmit(form)"class="example-form">
+                <div class="singlePlayerTitle">
+                    <mat-icon>settings_application</mat-icon>
+                    <h2>Game Settings</h2>
+                    <mat-icon>settings_application</mat-icon>
+                </div>
+                <h4>Customization options for your poker game.</h4>
+                <div class="numOfBots">
+                    <mat-form-field appearance="fill">
+                        <mat-label>Number of Bots</mat-label>
+                        <mat-select name="food">
+                          <mat-option *ngFor="let food of foods" [value]="food.value">
+                            {{food.viewValue}}
+                          </mat-option>
+                        </mat-select>
+                    </mat-form-field>
+                </div>
+                <div class="startingAmount">
+                    <mat-form-field class="example-full-width" appearance="outline">
+                        <mat-icon matPrefix>attach_money</mat-icon>
+                        <mat-label>Starting Amount Per Player</mat-label>
+                        <input matInput>
+                    </mat-form-field>
+                </div>
+                <div class="smallBlind">
+                    <mat-form-field class="example-full-width" appearance="outline">
+                        <mat-icon matPrefix>attach_money</mat-icon>
+                        <mat-label>Small Blind Value</mat-label>
+                        <input matInput>
+                    </mat-form-field>
+                </div>
+                <div class="bigBlind">
+                    <mat-form-field class="example-full-width" appearance="outline">
+                        <mat-icon matPrefix>attach_money</mat-icon>
+                        <mat-label>Big Blind Value</mat-label>
+                        <input matInput>
+                    </mat-form-field>
+                </div>
+                <div class="navButtons">
+                    <button 
+                        class="homePageButton"
+                        routerLink="/home-page"
+                        mat-stroked-button color="warn">
+                        Back to Home Page
+                    </button>
+                    <button 
+                        type="submit"
+                        mat-stroked-button color="primary">
+                        Proceed to Game Floor
+                    </button>
+                </div>
+            </form>
+            
+        </section>
+    </div>
+</div>
+
 
