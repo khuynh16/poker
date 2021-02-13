@@ -12,9 +12,16 @@
     border-radius: 10px;
 }
 
-img {
+.playingCards img {
     height: 100%;
     display: none;
+}
+
+
+.dealerChip {
+    position: absolute;
+    left: 0;
+    width: 20%;
 }
 
 p {
