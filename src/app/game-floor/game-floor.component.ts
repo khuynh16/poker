@@ -7,6 +7,7 @@ import { Component, OnInit, ViewChild, AfterViewInit } from '@angular/core';
 })
 export class GameFloorComponent implements OnInit {
   cardsInHandDisplayed = false;
+  showFlop = false;
 
   constructor() { }
 
@@ -16,6 +17,9 @@ export class GameFloorComponent implements OnInit {
   gameStart() {
     console.log('Game started.');
     this.cardsInHandDisplayed = true;
-    // somehow call displayCards function in player-cards component
+  }
+
+  displayFlop() {
+    this.showFlop = true;
   }
 }

@@ -1,11 +1,11 @@
 import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
-  selector: 'app-player-cards',
-  templateUrl: './player-cards.component.html',
-  styleUrls: ['./player-cards.component.css']
+  selector: 'app-player-mats',
+  templateUrl: './player-mats.component.html',
+  styleUrls: ['./player-mats.component.css']
 })
-export class PlayerCardsComponent implements OnInit {
+export class PlayerMatsComponent implements OnInit {
 
   @Input() gameStart: boolean;
 

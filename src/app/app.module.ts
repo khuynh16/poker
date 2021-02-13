@@ -17,9 +17,11 @@ import { HomePageComponent } from './home-page/home-page.component';
 import { ProfileComponent } from './home-page/profile/profile.component';
 import { ConsoleComponent } from './home-page/console/console.component';
 import { GameFloorComponent } from './game-floor/game-floor.component';
-import { PlayerCardsComponent } from './game-floor/player-cards/player-cards.component';
+import { PlayerMatsComponent } from './game-floor/player-mats/player-mats.component';
 import { AuthFormComponent } from './auth/auth-form/auth-form.component';
 import { GameSettingsComponent } from './game-settings/game-settings.component';
+import { CommunityCardsComponent } from './game-floor/community-cards/community-cards.component';
+import { PlayingAreaComponent } from './game-floor/playing-area/playing-area.component';
 
 
 @NgModule({
@@ -32,9 +34,11 @@ import { GameSettingsComponent } from './game-settings/game-settings.component';
     ProfileComponent,
     ConsoleComponent,
     GameFloorComponent,
-    PlayerCardsComponent,
+    PlayerMatsComponent,
     AuthFormComponent,
-    GameSettingsComponent
+    GameSettingsComponent,
+    CommunityCardsComponent,
+    PlayingAreaComponent
   ],
   imports: [
     BrowserModule,

@@ -1,6 +1,7 @@
 <div class="container">
     <div class="seatingCircle">
-        <button mat-stroked-button color="primary" (click)="gameStart()">Start Game</button>
-        <app-player-cards [gameStart]="cardsInHandDisplayed"></app-player-cards>
+        <button mat-stroked-button color="primary" *ngIf="!cardsInHandDisplayed" (click)="gameStart()">Start Game</button>
+        <app-player-mats [gameStart]="cardsInHandDisplayed"></app-player-mats>
+        <app-playing-area *ngIf="cardsInHandDisplayed" [displayFlop]="showFlop"></app-playing-area>
     </div>
 </div>
