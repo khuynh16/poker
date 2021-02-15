@@ -9,8 +9,6 @@ export class PlayerMatsComponent implements OnInit {
 
   @Input() gameStart: boolean;
 
-  p1c1 = "3H";
-  p1c2 = "AC";
   suits = ['C', 'D', 'H', 'S'];
   values = ['2', '3', '4', '5', '6', '7', '8', '9', '10', 'J', 'Q', 'K', 'A'];
   deckOfCards = {};
@@ -135,6 +133,10 @@ export class PlayerMatsComponent implements OnInit {
     min = Math.ceil(0);
     max = Math.floor(numCardsInDeck - 1);
     return Math.floor(Math.random() * (max - min + 1)) + min;
+  }
+
+  determineDealer() {
+    
   }
 
   /*

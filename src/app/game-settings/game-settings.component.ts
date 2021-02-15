@@ -2,11 +2,6 @@ import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, FormControl, Validators } from '@angular/forms';
 import { Router } from '@angular/router';
 
-interface Food {
-  value: string;
-  viewValue: string;
-}
-
 @Component({
   selector: 'app-game-settings',
   templateUrl: './game-settings.component.html',
@@ -15,11 +10,7 @@ interface Food {
 export class GameSettingsComponent implements OnInit {
   form: FormGroup;
   selectedValue: string;
-  foods: Food[] = [
-    {value: 'steak-0', viewValue: 'Steak'},
-    {value: 'pizza-1', viewValue: 'Pizza'},
-    {value: 'tacos-2', viewValue: 'Tacos'}
-  ];
+  numOfBots = [1, 2, 3, 4, 5];
 
 
   constructor(private fb: FormBuilder, private router: Router) { }
