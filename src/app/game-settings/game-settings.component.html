@@ -2,7 +2,7 @@
     <div class="dashboard">
         <app-profile></app-profile>
         <section class="gameSettings">
-            <form [formGroup]="form" (ngSubmit)="onSubmit(form)"class="example-form">
+            <form [formGroup]="form" (ngSubmit)="onSubmit(form)" class="example-form">
                 <div class="singlePlayerTitle">
                     <mat-icon>settings_application</mat-icon>
                     <h2>Game Settings</h2>
@@ -12,7 +12,7 @@
                 <div class="numOfBots">
                     <mat-form-field appearance="fill">
                         <mat-label>Number of Bots</mat-label>
-                        <mat-select name="numOfBots">
+                        <mat-select name="numOfBots" formControlName="numOfBots">
                           <mat-option *ngFor="let num of numOfBots" [value]="num">
                             {{ num }}
                           </mat-option>
@@ -23,21 +23,21 @@
                     <mat-form-field class="example-full-width" appearance="outline">
                         <mat-icon matPrefix>attach_money</mat-icon>
                         <mat-label>Starting Amount Per Player</mat-label>
-                        <input matInput>
+                        <input matInput formControlName="startingAmount">
                     </mat-form-field>
                 </div>
                 <div class="smallBlind">
                     <mat-form-field class="example-full-width" appearance="outline">
                         <mat-icon matPrefix>attach_money</mat-icon>
                         <mat-label>Small Blind Value</mat-label>
-                        <input matInput>
+                        <input matInput formControlName="smallBlind">
                     </mat-form-field>
                 </div>
                 <div class="bigBlind">
                     <mat-form-field class="example-full-width" appearance="outline">
                         <mat-icon matPrefix>attach_money</mat-icon>
                         <mat-label>Big Blind Value</mat-label>
-                        <input matInput>
+                        <input matInput formControlName="bigBlind">
                     </mat-form-field>
                 </div>
                 <div class="navButtons">
