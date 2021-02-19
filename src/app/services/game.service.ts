@@ -21,4 +21,8 @@ export class GameService {
     // selects in game settings
     // e.g. displayBots(numOfBots);
   }
+
+  displayBots(numOfBots) {
+    console.log('Bots here');
+  }
 }

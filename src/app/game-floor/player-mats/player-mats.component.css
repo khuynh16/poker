@@ -1,9 +1,9 @@
 .player1,
-.player2,
-.player3,
-.player4,
-.player5,
-.player6 {
+.bot1,
+.bot2,
+.bot3,
+.bot4,
+.bot5 {
     background-color: rgb(62, 65, 66);
     position: absolute;
     border: 1px solid black;
@@ -48,27 +48,27 @@ p {
     bottom: -10%;
 }
 
-.player2 {
+.bot1 {
     left: -5%;
     bottom: 15%;
 }
 
-.player3 {
+.bot2 {
     left: -5%;
     top: 15%;
 }
 
-.player4 {
+.bot3 {
     left: 35%;
     top: -10%;
 }
 
-.player5 {
+.bot4 {
     left: 75%;
     top: 15%;
 }
 
-.player6 {
+.bot5 {
     left: 75%;
     bottom: 15%;
 }

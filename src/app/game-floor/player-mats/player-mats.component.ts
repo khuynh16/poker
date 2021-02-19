@@ -1,5 +1,7 @@
 import { Component, OnInit, Input } from '@angular/core';
 
+import { GameService } from '../../services/game.service';
+
 @Component({
   selector: 'app-player-mats',
   templateUrl: './player-mats.component.html',
@@ -25,9 +27,13 @@ export class PlayerMatsComponent implements OnInit {
     p6c1: '', p6c2: '',
   };
 
-  constructor() { }
+  constructor(private gameService: GameService) { }
 
   ngOnInit(): void {
+    // call service and get value here somehow
+    this.gameService.displayBots(4);
+
+    // set up the deck
     for (let i = 0; i < this.suits.length; i++) {
       for (let j = 0; j < this.values.length; j++) {
         this.card = this.values[j] + '' + this.suits[i];
