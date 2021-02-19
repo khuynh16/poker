@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, FormControl, Validators } from '@angular/forms';
-import { Router } from '@angular/router';
 
 import { GameService } from '../services/game.service';
 
@@ -15,7 +14,7 @@ export class GameSettingsComponent implements OnInit {
   numOfBots = [1, 2, 3, 4, 5];
 
 
-  constructor(private fb: FormBuilder, private router: Router, private gameService: GameService) { }
+  constructor(private fb: FormBuilder, private gameService: GameService) { }
 
   ngOnInit(): void {
     this.form =  this.fb.group({
@@ -33,8 +32,6 @@ export class GameSettingsComponent implements OnInit {
       form.controls.smallBlind.value,
       form.controls.bigBlind.value
     );
-
-    this.router.navigate(['game-floor']);
 
     // needs to somehow pass form values to player-mats
       // to determine visible number of players

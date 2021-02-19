@@ -49,18 +49,18 @@ p {
 }
 
 .player2 {
-    left: 35%;
-    top: -10%;
-}
-
-.player3 {
     left: -5%;
     bottom: 15%;
 }
 
-.player4 {
+.player3 {
     left: -5%;
     top: 15%;
+}
+
+.player4 {
+    left: 35%;
+    top: -10%;
 }
 
 .player5 {

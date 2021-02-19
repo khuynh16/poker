@@ -66,7 +66,6 @@ export class PlayerMatsComponent implements OnInit {
       randNum = this.getRandomNumber(this.numCardsInDeck);  
       // assign first card
       firstCard = this.getCard(randNum);
-      console.log('firstCard: ' + firstCard);
       // remove card from deck (counter and the actual deck)
       this.numCardsInDeck--;
       this.tempDeckOfCards = this.removeCardFromDeck(firstCard, this.tempDeckOfCards);
@@ -75,7 +74,6 @@ export class PlayerMatsComponent implements OnInit {
       randNum = this.getRandomNumber(this.numCardsInDeck);
       // assign second card
       secondCard = this.getCard(randNum);
-      console.log('secondCard: ' + secondCard);
       // remove card from deck (counter and the actual deck)
       this.numCardsInDeck--;
       this.tempDeckOfCards = this.removeCardFromDeck(secondCard, this.tempDeckOfCards);
@@ -83,8 +81,6 @@ export class PlayerMatsComponent implements OnInit {
       // assign the two poker cards in player hand in respective playerHand objects
       this.playerHand['p' + (i + 1) + 'c1'] = firstCard;
       this.playerHand['p' + (i + 1) + 'c2'] = secondCard;
-
-      console.log('=======================');
     }
 
     // console.log(Object.keys(this.tempDeckOfCards).length);
