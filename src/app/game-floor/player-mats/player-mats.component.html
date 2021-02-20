@@ -1,5 +1,5 @@
 <div class="player1">
-    <img class="dealerChip" src="../../../assets/images/dealerChip.png" alt="">
+    <img class="dealerChip" src="../../../assets/images/dealerChip.png" *ngIf="viewDealer.player1" alt="">
     <div class="playingCards">
         <img [style.display]="displayCards()" src="../../../assets/images/cards/{{ playerHand['p1c1'] }}.png" alt="">
         <img [style.display]="displayCards()" src="../../../assets/images/cards/{{ playerHand['p1c2'] }}.png" alt="">
@@ -10,7 +10,7 @@
     </div>
 </div>
 <div class="bot1" *ngIf="viewBots.bot1">
-    <img class="dealerChip" src="../../../assets/images/dealerChip.png" alt="">
+    <img class="dealerChip" src="../../../assets/images/dealerChip.png" *ngIf="viewDealer.bot1" alt="">
     <div class="playingCards">
         <img [style.display]="displayCards()" src="../../../assets/images/cards/{{ playerHand['p2c1'] }}.png" alt="">
         <img [style.display]="displayCards()" src="../../../assets/images/cards/{{ playerHand['p2c2'] }}.png" alt="">
@@ -21,7 +21,7 @@
     </div>
 </div>
 <div class="bot2" *ngIf="viewBots.bot2">
-    <img class="dealerChip" src="../../../assets/images/dealerChip.png" alt="">
+    <img class="dealerChip" src="../../../assets/images/dealerChip.png" *ngIf="viewDealer.bot2" alt="">
     <div class="playingCards">
         <img [style.display]="displayCards()" src="../../../assets/images/cards/{{ playerHand['p3c1'] }}.png" alt="">
         <img [style.display]="displayCards()" src="../../../assets/images/cards/{{ playerHand['p3c2'] }}.png" alt="">
@@ -32,7 +32,7 @@
     </div>
 </div>
 <div class="bot3" *ngIf="viewBots.bot3">
-    <img class="dealerChip" src="../../../assets/images/dealerChip.png" alt="">
+    <img class="dealerChip" src="../../../assets/images/dealerChip.png" *ngIf="viewDealer.bot3" alt="">
     <div class="playingCards">
         <img [style.display]="displayCards()" src="../../../assets/images/cards/{{ playerHand['p4c1'] }}.png" alt="">
         <img [style.display]="displayCards()" src="../../../assets/images/cards/{{ playerHand['p4c2'] }}.png" alt="">
@@ -43,7 +43,7 @@
     </div>
 </div>
 <div class="bot4" *ngIf="viewBots.bot4">
-    <img class="dealerChip" src="../../../assets/images/dealerChip.png" alt="">
+    <img class="dealerChip" src="../../../assets/images/dealerChip.png" *ngIf="viewDealer.bot4" alt="">
     <div class="playingCards">
         <img [style.display]="displayCards()" src="../../../assets/images/cards/{{ playerHand['p5c1'] }}.png" alt="">
         <img [style.display]="displayCards()" src="../../../assets/images/cards/{{ playerHand['p5c2'] }}.png" alt="">
@@ -54,7 +54,7 @@
     </div>
 </div>
 <div class="bot5" *ngIf="viewBots.bot5">
-    <img class="dealerChip" src="../../../assets/images/dealerChip.png" alt="">
+    <img class="dealerChip" src="../../../assets/images/dealerChip.png" *ngIf="viewDealer.bot5" alt="">
     <div class="playingCards">
         <img [style.display]="displayCards()" src="../../../assets/images/cards/{{ playerHand['p6c1'] }}.png" alt="">
         <img [style.display]="displayCards()" src="../../../assets/images/cards/{{ playerHand['p6c2'] }}.png" alt="">

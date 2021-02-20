@@ -35,6 +35,15 @@ export class PlayerMatsComponent implements OnInit {
     bot5: false
   }
 
+  viewDealer = {
+    player: false,
+    bot1: false,
+    bot2: false,
+    bot3: false,
+    bot4: false,
+    bot5: false
+  }
+
   constructor(private gameService: GameService) { }
 
   ngOnInit(): void {
