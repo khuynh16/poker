@@ -27,11 +27,20 @@ export class PlayerMatsComponent implements OnInit {
     p6c1: '', p6c2: '',
   };
 
+  viewBots = {
+    bot1: false,
+    bot2: false,
+    bot3: false,
+    bot4: false,
+    bot5: false
+  }
+
   constructor(private gameService: GameService) { }
 
   ngOnInit(): void {
-    // call service and get value here somehow
-    this.gameService.displayBots(4);
+    // assigns object properties to determine if bot is visible (depends on number of
+    // bots user wants to play against))
+    this.viewBots = this.gameService.displayBots(this.viewBots);
 
     // set up the deck
     for (let i = 0; i < this.suits.length; i++) {
@@ -47,15 +56,6 @@ export class PlayerMatsComponent implements OnInit {
     // poker cards are dealt already at game floor screen, just not displayed until
     // start game button is clicked
     this.dealCards(6);
-
-    /*
-    CURRENT ISSUE
-    -below function needed to be in displayCards function
-    -however, because the playerHand object isn't technically assigned values immediately
-      on page load, only when start game button is clicked, the interpolation does not 
-      handle correctly -> thus 404 status error for an image code cannot find
-    */
-    // this.dealCards(6);
   }
 
   /*
@@ -88,10 +88,6 @@ export class PlayerMatsComponent implements OnInit {
       this.playerHand['p' + (i + 1) + 'c1'] = firstCard;
       this.playerHand['p' + (i + 1) + 'c2'] = secondCard;
     }
-
-    // console.log(Object.keys(this.tempDeckOfCards).length);
-    // console.log('player hands: ');
-    // console.log(this.playerHand);
   }
 
   /*

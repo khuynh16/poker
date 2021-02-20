@@ -9,7 +9,7 @@
         <p>$1,250</p>
     </div>
 </div>
-<div class="bot1">
+<div class="bot1" *ngIf="viewBots.bot1">
     <img class="dealerChip" src="../../../assets/images/dealerChip.png" alt="">
     <div class="playingCards">
         <img [style.display]="displayCards()" src="../../../assets/images/cards/{{ playerHand['p2c1'] }}.png" alt="">
@@ -20,7 +20,7 @@
         <p>$1,754</p>
     </div>
 </div>
-<div class="bot2">
+<div class="bot2" *ngIf="viewBots.bot2">
     <img class="dealerChip" src="../../../assets/images/dealerChip.png" alt="">
     <div class="playingCards">
         <img [style.display]="displayCards()" src="../../../assets/images/cards/{{ playerHand['p3c1'] }}.png" alt="">
@@ -31,7 +31,7 @@
         <p>$500</p>
     </div>
 </div>
-<div class="bot3">
+<div class="bot3" *ngIf="viewBots.bot3">
     <img class="dealerChip" src="../../../assets/images/dealerChip.png" alt="">
     <div class="playingCards">
         <img [style.display]="displayCards()" src="../../../assets/images/cards/{{ playerHand['p4c1'] }}.png" alt="">
@@ -42,7 +42,7 @@
         <p>$11,350</p>
     </div>
 </div>
-<div class="bot4">
+<div class="bot4" *ngIf="viewBots.bot4">
     <img class="dealerChip" src="../../../assets/images/dealerChip.png" alt="">
     <div class="playingCards">
         <img [style.display]="displayCards()" src="../../../assets/images/cards/{{ playerHand['p5c1'] }}.png" alt="">
@@ -53,7 +53,7 @@
         <p>$450</p>
     </div>
 </div>
-<div class="bot5">
+<div class="bot5" *ngIf="viewBots.bot5">
     <img class="dealerChip" src="../../../assets/images/dealerChip.png" alt="">
     <div class="playingCards">
         <img [style.display]="displayCards()" src="../../../assets/images/cards/{{ playerHand['p6c1'] }}.png" alt="">
