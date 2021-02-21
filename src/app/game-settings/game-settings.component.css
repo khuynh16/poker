@@ -82,7 +82,7 @@ input {
     padding: 0px 10px;
 }
 
-::ng-deep .mat-form-field-appearance-outline .mat-form-field-outline {
+:host ::ng-deep .mat-form-field-appearance-outline .mat-form-field-outline {
     color: black;
 }
 
