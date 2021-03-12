@@ -39,7 +39,7 @@ a, a:visited, a:hover, a:active {
     height: 70%;
 }
 
- .statsTitle {
+ .playerName {
     position: absolute;
     color: white;
     padding-bottom: 15px;
