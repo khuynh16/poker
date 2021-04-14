@@ -2,6 +2,17 @@
 
 This application will allow the user to play poker against computer bots and to keep record of statistics.
 
+# Website
+
+* The project is currently hosted on Heroku: https://game-of-poker.herokuapp.com/
+
+# CHANGE LOGS
+
+* 4/14
+  * Website is hosted on Heroku
+  * Current capabilities: front end visuals, providing accurate hands for blackjack, displaying correct number of computer bots to play against
+  * No back end implemented as of yet, no actual function besides displaying 2-hand cards in blackjack
+
 ## General Notes:
 
 * will utilize the MEAN stack (e.g. MongoDB, Express.js, Angular, Node.js)
